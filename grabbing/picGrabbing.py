@@ -1,7 +1,7 @@
 import urllib.request
 import re
 
-url = "http://findicons.com/pack/2787/beautiful_flat_icons"
+url = "https://findicons.com/pack/2847/20_music_icons"
 webPage=urllib.request.urlopen(url)
 data = webPage.read()
 data = data.decode('UTF-8')
@@ -32,7 +32,7 @@ for it in sp:
     web = urllib.request.urlopen(iturl)
     itdata = web.read()
     if (cnt%3==1 and cnt>=4 and cou<=30):
-        f = open('d:/pythoncode/simplecodes/image/'+str(cou)+'.png',"wb")
+        f = open('d:/resources/icons/20_music_icons/'+str(cou)+'.png',"wb")
         cou = cou+1
         f.write(itdata)
         f.close()
